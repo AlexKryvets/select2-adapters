@@ -1,6 +1,6 @@
 {
   "name": "@teamsoft/select2-adapters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {},
   "repository": {
@@ -8,5 +8,9 @@
     "url": "https://github.com/AlexKryvets/select2-adapters.git"
   },
   "author": "Alexey Kryvets",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "select2": "^4.0.5",
+    "jquery": "1.9.1 - 3"
+  }
 }
