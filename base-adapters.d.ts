@@ -1,19 +1,21 @@
 import {Options} from 'select2';
 
+export declare type QueryCallback = (params: {results: any[]}) => void;
+
 interface DataAdapter {
-    query(params, callback): void;
+    query(params: any, callback: QueryCallback): void;
 }
 
 declare abstract class BaseAdapter implements DataAdapter {
     options: Options;
-    abstract query(params, callback): void;
+    abstract query(params: any, callback: QueryCallback): void;
     constructor($element: any, options: Options);
 }
 
 export declare class SelectAdapter extends BaseAdapter {
     container: any;
     $element: any;
-    query(params, callback): void;
+    query(params: any, callback: QueryCallback): void;
     option(data: any): any;
     addOptions(data: any): any;
 }
